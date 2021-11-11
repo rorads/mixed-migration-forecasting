@@ -1,0 +1,12 @@
+tasks:
+  - name: Setup Python
+    init: |
+      pyenv install 3.7.4
+      cd /workspace/mixed-migration-forecasting/server
+      pyenv local 3.7.4
+      pip install --upgrade pip setuptools wheel
+    command: |
+      echo "set up finished"
+      
+      
+      
